@@ -1,16 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { HelloComponent } from './hello.component';
+import { AccordionComponent } from './shared/accordion/accordion.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
+  imports: [BrowserModule, FormsModule],
+  declarations: [AppComponent, HelloComponent, AccordionComponent],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

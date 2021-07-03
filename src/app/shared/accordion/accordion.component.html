@@ -1,0 +1,15 @@
+<div class="row mb-2">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header" (click)="toggleAccordion()">
+        {{name}}
+      </div>
+      <div class="card-body" [hidden]="isHidden">
+        <ng-content select='.my-body'></ng-content>
+      </div>
+      <div class="card-footer" [hidden]="isHidden">
+        <ng-content select='.my-footer'></ng-content>
+      </div>
+    </div>
+  </div>
+</div>
